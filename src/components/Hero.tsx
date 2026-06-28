@@ -136,7 +136,7 @@ export function Hero() {
               size="lg"
               className="rounded-full bg-primary hover:bg-primary/90 text-primary-foreground group"
             >
-              <a href="/Vikasraj__Resume.pdf" download>
+              <a href={`${import.meta.env.BASE_URL}Vikasraj__Resume.pdf`} download>
                 View Resume
                 <Download className="ml-2 w-4 h-4 group-hover:-translate-y-1 transition-transform" />
               </a>
@@ -184,7 +184,7 @@ export function Hero() {
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full p-2 bg-gradient-to-br from-primary via-[#8B83FF] to-[#FF6584]">
             <div className="absolute inset-0 rounded-full animate-[spin_4s_linear_infinite] bg-gradient-to-br from-primary via-transparent to-transparent opacity-50 blur-md"></div>
             <img
-              src="/Photo.jpg"
+              src={`${import.meta.env.BASE_URL}Photo.jpg`}
               alt="Jakkoju Vikas Raj"
               className="relative w-full h-full object-cover rounded-full border-4 border-background z-10"
             />

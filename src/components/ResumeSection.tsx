@@ -32,13 +32,13 @@ export function ResumeSection() {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="rounded-full px-8 text-base shadow-lg shadow-primary/20 hover:shadow-primary/40">
-                  <a href="/Vikasraj__Resume.pdf" download>
+                  <a href={`${import.meta.env.BASE_URL}Vikasraj__Resume.pdf`} download>
                     <Download className="mr-2 w-5 h-5" />
                     Download PDF
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="rounded-full px-8 text-base bg-background/50 hover:bg-background">
-                  <a href="/Vikasraj__Resume.pdf" target="_blank" rel="noreferrer">
+                  <a href={`${import.meta.env.BASE_URL}Vikasraj__Resume.pdf`} target="_blank" rel="noreferrer">
                     <ExternalLink className="mr-2 w-5 h-5" />
                     View Online
                   </a>
